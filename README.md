@@ -2,9 +2,9 @@
 
 Dataset of Social Response (facial AUs) to Errors in physical human-robot interaction containing three folders representing the three data collection scenarios: Human-Robot Collaborative Assembly (HRC-A), Human-Robot Collaborative Cooking (HRC-C),  and Programming by Demonstration Data (PbD). 
 
+## Content
 
 In each folder, there are csv files for each error instance and a ground truth annotations file. Each error instance consists of one error and one reaction.
-
 
 The error instance csv files have a naming convention of XXX_OpenFaceOutput_XXX.csv, where the X’s depend on the data collection scenario described below. These files are comprised of AUs calculated by OpenFace with each row being a timestep representing 1/3 of a second. The first column, “Originating Time,” corresponds to the time that row is in the error instance. The second column, “Confidence,” is the facial detection confidence as outputted by OpenFace, ranging from 0 to 1. The remaining (34) columns are the outputted AUs at a particular timestep. The naming convention for those columns are as follows:
 AUXX_YY
@@ -53,7 +53,7 @@ XX represents the participant number. YY represents different error types. If �
 ----
 
 ## BibTeX
-If you use this robotic system in a scientific publication, please cite our work:
+If you use this dataset in a scientific publication, please cite our work:
 ```
 @inproceedings{stiber2023using,
   title={On Using Social Signals to Enable Flexible Error-Aware HRI},
